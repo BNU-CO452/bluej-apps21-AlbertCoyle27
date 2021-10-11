@@ -1,0 +1,18 @@
+Student student = new Student("Albert Coyle", 22014496);
+computing.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CWD1: BSc Computing & Web
+
+student.print();
+ Student ID: 22014496 Name: Albert Coyle
+student.enrol(computing);
+student.printCourse();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CWD1: BSc Computing & Web
+
