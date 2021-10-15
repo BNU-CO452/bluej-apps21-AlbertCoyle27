@@ -13,15 +13,17 @@ public class Course
     private String code;
     // The full title including qualification and subject
     private String title;
-    
+    // The full title of an individual module of the course
+    private String moduletitle;
     /**
      * Create a Course with a maximum number of enrolments. 
      * All other details are set to unkown values.
      */
-    public Course(String code, String title)
+    public Course(String code, String title, String moduletitle)
     {
         this.code = code;
         this.title = title;
+        this.moduletitle = moduletitle;
     }
 
     
@@ -33,7 +35,8 @@ public class Course
     {
         printHeading();
         
-        System.out.println(" Course Code: " + code + ": " + title);
+        System.out.println(" Course Code: " + code + ": " + title 
+        + ": " + moduletitle);
         System.out.println();
     }
     

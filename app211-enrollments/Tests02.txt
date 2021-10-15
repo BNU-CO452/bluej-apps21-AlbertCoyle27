@@ -1,0 +1,25 @@
+Module module1 = new Module("CO452", "Programming Concepts", 0);
+module1.print();
+ --------------------------------
+   App211: Module Information
+ --------------------------------
+
+ Module Code: CO452Programming Concepts: 0
+
+Module module1 = new Module("CO452", "Programming Concepts", 15);
+module1.print();
+ --------------------------------
+   App211: Module Information
+ --------------------------------
+
+ Module Code: CO452: Programming Concepts: 15
+
+Module module1 = new Module("CO452", "Programming Concepts", 15);
+Course course1 = new Course("BT1CWD1", "BSc Computing and Web", "Programming Concepts");
+course1.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CWD1: BSc Computing and Web: Programming Concepts
+
