@@ -50,4 +50,9 @@ public class Course
         System.out.println(" --------------------------------");
         System.out.println();
     }
+    
+    public void enrol(Module module)
+    {
+        this.moduletitle = moduletitle;
+    }
 }
