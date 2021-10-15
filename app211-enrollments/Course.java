@@ -38,6 +38,7 @@ public class Course
         System.out.println(" Course Code: " + code + ": " + title 
         + ": " + moduletitle);
         System.out.println();
+
     }
     
     /**
@@ -51,7 +52,7 @@ public class Course
         System.out.println();
     }
     
-    public void enrol(Module module)
+    public void assign(Module module)
     {
         this.moduletitle = moduletitle;
     }
