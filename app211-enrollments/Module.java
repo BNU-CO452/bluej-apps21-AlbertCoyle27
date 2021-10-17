@@ -21,6 +21,7 @@ public class Module
     {
         this.modulecode = modulecode;
         this.moduletitle = moduletitle;
+        this.credit = 15;
     }
 
     
@@ -47,15 +48,7 @@ public class Module
         System.out.println(" --------------------------------");
         System.out.println();
     }
-    
-    /**
-     * Constructor serves to initialise each variable
-     */
-    public Module (String modulecode, String moduletitle)
-    {
-        this.credit = 15;
-    }
-    
+
     public void setCredit (int credit)
     {
         this.credit = credit;
