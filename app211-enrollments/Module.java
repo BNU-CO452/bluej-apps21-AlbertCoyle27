@@ -39,7 +39,7 @@ public class Module
     }
     
     /**
-     * Print out the details of the module to the terminal.
+     * Creates a header to accent the module information printout
      */
     private void printHeading()
     {

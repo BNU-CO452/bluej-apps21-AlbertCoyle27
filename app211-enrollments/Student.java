@@ -54,6 +54,21 @@ public class Student
         System.out.println(" Student ID: " + id + " Name: " + name);
     }
     
+    /**
+     * Creates a header to accent the student details printout
+     */
+    private void printHeading()
+    {
+        System.out.println(" --------------------------------");
+        System.out.println("   App211: Student Details");
+        System.out.println(" --------------------------------");
+        System.out.println();
+    }
+    
+    /**
+     * Print out the details of the course the student is assigned to to the
+     * output terminal.
+     */
     public void printCourse()
     {
         course.print();
