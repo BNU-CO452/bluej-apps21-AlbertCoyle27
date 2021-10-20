@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Module here.
+ * The Module Class contains information on the modules undertaken as part of a
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Albert Coyle
+ * @version 1.0 20/10/2021
  */
 public class Module
 {
@@ -14,8 +14,8 @@ public class Module
     // The credit value of the module.
     private int credit;
     /**
-     * Create a Module. 
-     * All other details are set to unkown values.
+     * Module Constructor. 
+     * The values representative of the Module chosen are entered here.
      */
     public Module(String modulecode, String moduletitle, int credit)
     {

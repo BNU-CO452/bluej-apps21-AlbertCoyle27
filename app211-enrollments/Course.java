@@ -5,7 +5,8 @@ import java.util.*;
  * at BNU together with a list of student who are enrolled
  *
  * @author Derek Peacock
- * @version 1.0 14/07/2021
+ * @modified by Albert Coyle
+ * @version 1.1 20/10/2021
  */
 public class Course
 {
