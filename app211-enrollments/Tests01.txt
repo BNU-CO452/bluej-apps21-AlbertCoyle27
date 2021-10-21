@@ -1,11 +1,12 @@
-Student student = new Student("Albert Coyle", 22014496);
+Course computing = new Course("BT1CWD1", "BSc Hons Computing & Web", "Programming Concepts");
 computing.print();
  --------------------------------
    App211: Course Details
  --------------------------------
 
- Course Code: BT1CWD1: BSc Computing & Web
+ Course Code: BT1CWD1Course Title: BSc Hons Computing & Web: Programming Concepts
 
+Student student = new Student("Albert Coyle", 22014496);
 student.print();
  Student ID: 22014496 Name: Albert Coyle
 student.enrol(computing);
@@ -14,5 +15,5 @@ student.printCourse();
    App211: Course Details
  --------------------------------
 
- Course Code: BT1CWD1: BSc Computing & Web
+ Course Code: BT1CWD1Course Title: BSc Hons Computing & Web: Programming Concepts
 
