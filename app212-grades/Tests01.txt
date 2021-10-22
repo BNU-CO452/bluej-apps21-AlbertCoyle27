@@ -1,0 +1,29 @@
+Student student = new Student("Albert Coyle", 22014496);
+Course computingandweb = new Course("GW4F", "BSc (Hons) Computing and Web Development");
+student.enrol(computingandweb);
+student.printCourse();
+ Student ID: 22014496, Albert Coyle
+
+ Course GW4F: BSc (Hons) Computing and Web Development
+
+Module co452 = new Module("CO452", "Programming Concepts");
+ModuleMark modulemarkco452 = new ModuleMark(co452);
+modulemarkco452.setMark(90);
+student.addMark(modulemarkco452);
+student.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22014496, Albert Coyle
+
+ Course GW4F: BSc (Hons) Computing and Web Development
+
+
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+
+ No Final Course Grade Yet!

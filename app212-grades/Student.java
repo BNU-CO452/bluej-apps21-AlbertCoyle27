@@ -24,7 +24,7 @@ public class Student
      */
     public Student()
     {
-        this("Derek", 12345678);
+        this("Albert Coyle", 22014496);
     }
     
     /**
@@ -102,9 +102,21 @@ public class Student
         course.print();
     }
     
+    
+    /**
+     * Ensure proper spacing is enforced between printed values. "System.out.print(" :");" is representative of a break.
+     * The [" :"] must be replace by an appropriate piece of dividing text.
+     */
     private void printModules()
     {
-
+        for(ModuleMark mark : marks)
+        {
+            System.out.println(mark.getModule().getCode());
+            System.out.print(" :");
+            System.out.println(mark.getModule().getTitle());
+            System.out.print("\t");
+            System.out.print(mark.getCredit());
+        }
     }
     
     public void printTranscript()

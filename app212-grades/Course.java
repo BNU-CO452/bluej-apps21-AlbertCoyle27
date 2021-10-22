@@ -19,11 +19,11 @@ public class Course
      
     public Course()
     {
-        this("G400", "BSc Computing");
+        this("GW4F", "BSc Hons Computing & Web");
     }
     
     /**
-     * Constructor for objects of class Course
+     * Constructor for objects of class Course (Method)
      */
     public Course(String code, String title)
     {
