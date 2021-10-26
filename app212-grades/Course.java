@@ -40,7 +40,7 @@ public class Course
     /**
      * Create four modules and add them to the
      * modules list for testing purposes.  These
-     * must be your four modules.
+     * must be your four modules. (Refer to Week 5 Presentation when available)
      */
     public void createModules()
     {
