@@ -134,6 +134,7 @@ public class Student
             System.out.println(mark.getModule().getTitle());
             System.out.print("\t");
             System.out.print(mark.getCredit());
+            System.out.print(course.convertToGrade(mark.getValue()));
         }
     }
     
