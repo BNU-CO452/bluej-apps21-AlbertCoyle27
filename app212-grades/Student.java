@@ -55,9 +55,9 @@ public class Student
         for(Module module : course.modules)
         {
             ModuleMark mark = new ModuleMark(module);
-            mark.setMark(value);
-            
+            mark.setMark(70);
             value = value - 10;
+            marks.add(mark);
         }
     }
     
@@ -77,15 +77,6 @@ public class Student
     {
         this.course = course;
         createMarks();
-    }
-    
-    /**
-     * Award a different pass mark for each of the
-     * modules on the enrolled course
-     */
-    public void awardTestMarks()
-    {
-        
     }
     
     /**
