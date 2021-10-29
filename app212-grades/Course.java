@@ -69,16 +69,17 @@ public class Course
      */
     public Grades convertToGrade(int mark)
     {
-        Grades grade = Grades.NS;
-        
-        if(mark > Grades.B.getValue())
-        {
-            return Grades.A;
-        }
-        else if(mark >= 59)
-        {
-            return Grades.B;
-        }
+        if(mark >= 0 && mark <= 39)
+        return Grades.F;
+        else if(mark <= 49)
+        return Grades.D;
+        else if(mark <= 59)
+        return Grades.C;
+        else if(mark <=69)
+        return Grades.B;
+        else if(mark <= 100)
+        return Grades.A;
+        else
         return Grades.NS;
     }
     
