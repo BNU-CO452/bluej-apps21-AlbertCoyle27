@@ -5,7 +5,7 @@ import java.util.ArrayList;
  *
  * @author Derek Peacock and Nicholas Day
  * Modified by Albert Coyle
- * @version 22-10-2021
+ * @version 29-10-2021
  */
 public class Course
 {
@@ -44,6 +44,14 @@ public class Course
      */
     public void createModules()
     {
+        Module moduleCO452 = new Module ("CO452", "Programming Concepts");
+        addModule(moduleCO452);
+        Module moduleCO454 = new Module ("CO454", "Digital Technologies and Professional Practice");
+        addModule(moduleCO454);
+        Module moduleCO456 = new Module ("CO456", "Web Development");
+        addModule(moduleCO456);
+        Module moduleCO450 = new Module ("CO450", "Computer Architectures");
+        addModule(moduleCO450);
 
     }
     
@@ -56,10 +64,21 @@ public class Course
     }
     
     /**
-     * 
+     * Converts the assigned numerical marks into letter grades. (Cannot use 70 for the 
+     * Grade A condition, it cannot be parsed)
      */
     public Grades convertToGrade(int mark)
     {
+        Grades grade = Grades.NS;
+        
+        if(mark > Grades.B.getValue())
+        {
+            return Grades.A;
+        }
+        else if(mark >= 59)
+        {
+            return Grades.B;
+        }
         return Grades.NS;
     }
     
@@ -87,9 +106,20 @@ public class Course
     
     /**
      * Print the course's four modules
+     * (Module) is the Class name, (module) is the Object name, (modules)
+     * represents the entry given for modules in the ArrayList
      */
     public void printModules()
     {
+        System.out.println("Course Modules");
+        System.out.println("---------------");
+        System.out.println();
+        
+        for(Module module : modules)
+        {
+            System.out.print("\t" + module.getCode());
+            System.out.print("\t" + module.getTitle());
+        }
         System.out.println();
         
     }

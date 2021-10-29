@@ -6,7 +6,7 @@ import java.util.*;
  * @author Michael Kölling and David Barnes
  * Modified by Derek Peacock & Nicholas Day
  * Further Modified by Albert Coyle
- * @version 22-10-2021
+ * @version 29-10-2021
  */
 public class Student
 {
@@ -44,6 +44,23 @@ public class Student
         marks.add(mark);
     }
     
+    
+    /**
+     * Award a different pass mark for each of the
+     * modules on the enrolled course. Reinsert this code: marks.addMark(value);
+     */
+    public void createMarks()
+    {
+        int value = 70;
+        for(Module module : course.modules)
+        {
+            ModuleMark mark = new ModuleMark(module);
+            mark.setMark(value);
+            
+            value = value - 10;
+        }
+    }
+    
     /**
      * Find the module by the moduleCode and
      * set its mark to the value
@@ -59,7 +76,7 @@ public class Student
     public void enrol(Course course)
     {
         this.course = course;
-        awardTestMarks();
+        createMarks();
     }
     
     /**
@@ -108,7 +125,7 @@ public class Student
      * Ensure proper spacing is enforced between printed values. "System.out.print(" :");" is representative of a break.
      * The [" :"] must be replace by an appropriate piece of dividing text.
      */
-    private void printModules()
+    public void printModules()
     {
         for(ModuleMark mark : marks)
         {
