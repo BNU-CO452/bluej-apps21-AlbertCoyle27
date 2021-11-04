@@ -67,23 +67,24 @@ public class Course
     }
     
     /**
-     * Converts the assigned numerical marks into letter grades. (Cannot use 70 for the 
+     * Converts and integer mark into a letter
+     * grades. (Cannot use 70 for the 
      * Grade A condition, it cannot be parsed)
      */
     public Grades convertToGrade(int mark)
     {
         if(mark >= 0 && mark <= 39)
-        return Grades.F;
+            return Grades.F;
         else if(mark <= 49)
-        return Grades.D;
+            return Grades.D;
         else if(mark <= 59)
-        return Grades.C;
+            return Grades.C;
         else if(mark <=69)
-        return Grades.B;
+            return Grades.B;
         else if(mark <= 100)
-        return Grades.A;
+            return Grades.A;
         else
-        return Grades.NS;
+            return Grades.NS;
     }
     
     /**
@@ -115,19 +116,10 @@ public class Course
      */
     public void printModules()
     {
-        System.out.println("---------------");
-        System.out.println("Course Modules");
-        System.out.println("---------------");
-        System.out.println();
-        
         for(Module module : modules)
         {
-            //System.out.print("\t" + module.getCode());
-            //System.out.print("\t" + module.getTitle());
             module.print();
             module.printCredit();
         }
-        System.out.println();
-        
     }
 }

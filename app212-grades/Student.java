@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.Random;
 /**
  * The Student class represents a student in a student administration system.
  * It holds the student details relevant in our context.
@@ -19,8 +18,6 @@ public class Student
     private Course course;
     // The marks awarded for the modules on the course
     private ArrayList<ModuleMark> marks;
-    // Provides a random variable (1-100) as a mark value
-    private Random randomMark;
     /**
      * This constructor creates a new student with a
      * fixed name and id. 
@@ -37,7 +34,6 @@ public class Student
     {
         this.name = name;
         this.id = id;
-        randomMark = new Random();
         marks = new ArrayList<ModuleMark>();
     }
 
@@ -58,7 +54,7 @@ public class Student
         {
             ModuleMark mark = new ModuleMark(module);
             //mark.setMark(randomMark.nextInt(100));
-            mark.setMark (70);
+            mark.setMark (value);
             value = value - 10;
             marks.add(mark);
         }
@@ -116,8 +112,8 @@ public class Student
     
     
     /**
-     * Ensure proper spacing is enforced between printed values. "System.out.print(" :");" is representative of a break.
-     * The [" :"] must be replace by an appropriate piece of dividing text.
+     * Prints the modules the student undertakes as part of
+     * their course.
      */
     public void printModules()
     {
@@ -149,7 +145,7 @@ public class Student
         System.out.println();
         System.out.println();
         System.out.println(" ---- \t -------------------- \t ------\t ---- \t -----");
-        System.out.println(" Code \t Module \t\tCredit\t Mark \t Grade");
+        System.out.println(" Code \t Module \tCredit\t Mark \t Grade");
         System.out.println(" ---- \t -------------------- \t ------\t ---- \t -----");
         
         printModules();
