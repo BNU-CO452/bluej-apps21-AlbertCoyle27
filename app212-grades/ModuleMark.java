@@ -1,10 +1,12 @@
 
 /**
- * Write a description of class ModuleMark here.
+ * Each module is marked on a scale of values ranging from 1
+ * to 100. These marks are needed to enumerate a student's
+ * overall grade in a course.
  *
  * @author Derek Peacock and Nicholas Day
  * Modified by Albert Coyle
- * @version 29-10-2021
+ * @version 04-11-2021
  */
 public class ModuleMark
 {

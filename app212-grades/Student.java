@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.Random;
 /**
  * The Student class represents a student in a student administration system.
  * It holds the student details relevant in our context.
@@ -6,7 +7,7 @@ import java.util.*;
  * @author Michael Kölling and David Barnes
  * Modified by Derek Peacock & Nicholas Day
  * Further Modified by Albert Coyle
- * @version 29-10-2021
+ * @version 04-11-2021
  */
 public class Student
 {
@@ -18,7 +19,8 @@ public class Student
     private Course course;
     // The marks awarded for the modules on the course
     private ArrayList<ModuleMark> marks;
-    
+    // Provides a random variable (1-100) as a mark value
+    private Random randomMark;
     /**
      * This constructor creates a new student with a
      * fixed name and id. 
@@ -35,7 +37,7 @@ public class Student
     {
         this.name = name;
         this.id = id;
-        
+        randomMark = new Random();
         marks = new ArrayList<ModuleMark>();
     }
 
@@ -47,15 +49,16 @@ public class Student
     
     /**
      * Award a different pass mark for each of the
-     * modules on the enrolled course. Reinsert this code: marks.addMark(value);
+     * modules on the enrolled course.
      */
-    public void createMarks()
+    public void awardTestMarks()
     {
         int value = 70;
         for(Module module : course.modules)
         {
             ModuleMark mark = new ModuleMark(module);
-            mark.setMark(70);
+            //mark.setMark(randomMark.nextInt(100));
+            mark.setMark (70);
             value = value - 10;
             marks.add(mark);
         }
@@ -71,12 +74,12 @@ public class Student
     }
     
     /**
-     * Set the student's course
+     * Set the student's course (createMarks();)
      */
     public void enrol(Course course)
     {
         this.course = course;
-        createMarks();
+        awardTestMarks();
     }
     
     /**
@@ -129,11 +132,16 @@ public class Student
         }
     }
     
+    /**
+     * Prints the entirety of the transcript associated with 
+     * a student's course, modules, module marks, and their
+     * overall grade.
+     */
     public void printTranscript()
     {
         System.out.println(" ------------------------------------");
         System.out.println(" App21-02: Exam Board Transcript 2021");
-        System.out.println("        by student name");
+        System.out.println("        by Albert Coyle");
         System.out.println(" ------------------------------------");
         
         printCourse();
@@ -144,7 +152,8 @@ public class Student
         System.out.println(" Code \t Module \t\tCredit\t Mark \t Grade");
         System.out.println(" ---- \t -------------------- \t ------\t ---- \t -----");
         
-       
+        printModules();
+        
         Grades finalGrade = course.calculateGrade(marks);
         
         System.out.println();

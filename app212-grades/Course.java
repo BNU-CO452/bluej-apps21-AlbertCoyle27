@@ -5,7 +5,7 @@ import java.util.ArrayList;
  *
  * @author Derek Peacock and Nicholas Day
  * Modified by Albert Coyle
- * @version 29-10-2021
+ * @version 04-11-2021
  */
 public class Course
 {
@@ -18,6 +18,10 @@ public class Course
     
     private Grades finalGrade;
      
+    /**
+     * Constructs a specified course (Computing and Web
+     * Development). Designed to streamline testing.
+     */
     public Course()
     {
         this("GW4F", "BSc Hons Computing & Web Development");
@@ -40,7 +44,7 @@ public class Course
     /**
      * Create four modules and add them to the
      * modules list for testing purposes.  These
-     * must be your four modules. (Refer to Week 5 Presentation when available)
+     * must be your four modules.
      */
     public void createModules()
     {
@@ -52,7 +56,6 @@ public class Course
         addModule(moduleCO456);
         Module moduleCO450 = new Module ("CO450", "Computer Architectures");
         addModule(moduleCO450);
-
     }
     
     public void addModule(Module module)
@@ -100,26 +103,29 @@ public class Course
     {
         System.out.println();
         System.out.println(" Course " + code + ": " + title);
-        //System.out.println();
+        System.out.println();
         
         printModules();
     }
     
     /**
-     * Print the course's four modules
+     * Print the four modules of the course.
      * (Module) is the Class name, (module) is the Object name, (modules)
      * represents the entry given for modules in the ArrayList
      */
     public void printModules()
     {
+        System.out.println("---------------");
         System.out.println("Course Modules");
         System.out.println("---------------");
         System.out.println();
         
         for(Module module : modules)
         {
-            System.out.print("\t" + module.getCode());
-            System.out.print("\t" + module.getTitle());
+            //System.out.print("\t" + module.getCode());
+            //System.out.print("\t" + module.getTitle());
+            module.print();
+            module.printCredit();
         }
         System.out.println();
         
