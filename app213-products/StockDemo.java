@@ -5,7 +5,8 @@
  * the StockManager class is completed.
  * 
  * @author David J. Barnes and Michael Kölling.
- * @version 2016.02.29
+ * @modified by Albert Coyle
+ * @version 05-11-21
  */
 public class StockDemo
 {
@@ -21,11 +22,19 @@ public class StockDemo
         this.stock = stock;
         
         // Add at least 10 products, they must be unique to you
-        // Make sure the ids are sequential numbers
+        // Make sure the ids are sequential numbers. A product ID cannot start
+        // with a 0. Not an illegal value, but it will not display.
         
-        stock.add(new Product(101, "Samsung Galaxy S20"));
-        stock.add(new Product(102, "Apple iPhone 12"));
-        stock.add(new Product(103, "Google Pixel 4A"));
+        stock.add(new Product(101, "Fitness Watch Standard"));
+        stock.add(new Product(102, "Fitness Watch Plus"));
+        stock.add(new Product(103, "Fitness Watch Premium"));
+        stock.add(new Product(104, "SmartPhone Simple"));
+        stock.add(new Product(105, "SmartPhone Alpha"));
+        stock.add(new Product(106, "SmartPhone Omega"));
+        stock.add(new Product(107, "HomeAssistant Basic"));
+        stock.add(new Product(108, "HomeAssistant Supreme"));
+        stock.add(new Product(109, "HomeAssistant Ultimate"));
+        stock.add(new Product(110, "Economy Batteries"));
     }
     
     /**

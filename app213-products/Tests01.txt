@@ -1,0 +1,22 @@
+product111HighPerfBatteries.print();
+ ID 111: High Performance Batteries stock level: 0
+product111HighPerfBatteries.decreaseQuantity(10);
+product111HighPerfBatteries.print();
+ ID 111: High Performance Batteries stock level: 0
+product111HighPerfBatteries.increaseQuantity(10);
+product111HighPerfBatteries.print();
+ ID 111: High Performance Batteries stock level: 10
+product111HighPerfBatteries.decreaseQuantity(5);
+product111HighPerfBatteries.print();
+ ID 111: High Performance Batteries stock level: 5
+StockList stockList1st = new StockList();
+stockList1st.add(product111HighPerfBatteries);
+stockList1st.add(product112RechargeableBatteries);
+stockList1st.print();
+
+ Bertraeme's Stock List
+ ====================
+
+ ID 111: High Performance Batteries stock level: 5
+ ID 112: Rechargeable Batteries stock level: 0
+

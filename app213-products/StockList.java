@@ -4,8 +4,8 @@ import java.util.ArrayList;
  * Manage the stock in a business.
  * The stock is described by zero or more Products.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Albert Coyle
+ * @version 05-11-21
  */
 public class StockList
 {
@@ -46,6 +46,7 @@ public class StockList
      */
     public void buyProduct(int productID, int amount)
     {
+        buyProduct(productID, amount);
     }
     
     /**
@@ -73,16 +74,16 @@ public class StockList
             {
                 product.decreaseQuantity(1);
                 
-                // printout message
+                System.out.println(" Product Sale Successful.");
             }
             else
             {
-                // printout message
+                System.out.println(" This product is currently out of stock.");
             }
         }
         else
         {
-            // printout message
+            System.out.println(" Product matching this criteria not found.");
         }
     }    
 
