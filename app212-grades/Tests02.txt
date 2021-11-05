@@ -1,0 +1,48 @@
+computingWeb.print();
+
+ Course GW4F: BSc Hons Computing & Web Development
+
+
+ CO452: 	Programming Concepts	  15 credits
+ CO454: 	Digital Technologies and Professional Practice	  15 credits
+ CO456: 	Web Development	  15 credits
+ CO450: 	Computer Architectures	  15 creditsalbert.awardTestMarks();
+albert.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by Albert Coyle
+ ------------------------------------
+ Student ID: 22014496, Albert Coyle
+
+ Course GW4F: BSc Hons Computing & Web Development
+
+
+ CO452: 	Programming Concepts	  15 credits
+ CO454: 	Digital Technologies and Professional Practice	  15 credits
+ CO456: 	Web Development	  15 credits
+ CO450: 	Computer Architectures	  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 	Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+CO452
+ :Programming Concepts
+	15ACO454
+ :Digital Technologies and Professional Practice
+	15BCO456
+ :Web Development
+	15CCO450
+ :Computer Architectures
+	15DCO452
+ :Programming Concepts
+	15ACO454
+ :Digital Technologies and Professional Practice
+	15BCO456
+ :Web Development
+	15CCO450
+ :Computer Architectures
+	15D
+
+ No Final Course Grade Yet!
+computingWeb.convertToGrade(65)
+    returned Object B
