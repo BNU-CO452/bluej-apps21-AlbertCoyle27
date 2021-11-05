@@ -45,8 +45,13 @@ public class StockList
      * @param amount The amount to increase the quantity by.
      */
     public void buyProduct(int productID, int amount)
+    // Can this be differentiated in name from the single value method?
     {
-        buyProduct(productID, amount);
+        Product product = findProduct(productID);
+        if(product != null)
+            product.increaseQuantity(amount);
+        else
+            System.out.println(" Product not found.");
     }
     
     /**
@@ -55,16 +60,33 @@ public class StockList
      */
     public Product findProduct(int productID)
     {
+        for(Product product : stock)
+        {
+            if(product.getID() == productID)
+            {
+                return product;
+            }
+        }
         return null;
     }
     
-    
-    /**
-     * Sell one of the given product.
+        /**
+     * Sells one of the given product.
      * Show the before and after status of the product.
      * @param id The ID of the product being sold.
      */
     public void sellProduct(int productID)
+    {
+        sellProduct(productID, 1);
+        // Calls the following method, but exclusively uses a value of one.
+    }
+    
+    /**
+     * Sell a chosen quantity of a given product.
+     * Show the before and after status of the product.
+     * @param id The ID of the product being sold.
+     */
+    public void sellProduct(int productID, int amount)
     {
         Product product = findProduct(productID);
         
@@ -72,13 +94,16 @@ public class StockList
         {
             if(product.getQuantity() > 0)
             {
-                product.decreaseQuantity(1);
+                product.decreaseQuantity(amount);
                 
-                System.out.println(" Product Sale Successful.");
+                System.out.println(" Sale of " + product.getName() +
+                " successful.");
+                // Personalise message, e.g. (Message + product.getName());
             }
             else
             {
-                System.out.println(" This product is currently out of stock.");
+                System.out.println( product.getName() +
+                " is currently out of stock.");
             }
         }
         else
@@ -134,7 +159,7 @@ public class StockList
     public void printHeading()
     {
         System.out.println();
-        System.out.println(" Peacock's Stock List");
+        System.out.println(" Bertraeme's Stock List");
         System.out.println(" ====================");
         System.out.println();
     }

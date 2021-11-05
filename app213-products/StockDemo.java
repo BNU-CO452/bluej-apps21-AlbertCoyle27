@@ -14,12 +14,13 @@ public class StockDemo
     private StockList stock;
 
     /**
-     * Create a StockManager and populate it with at least
-     * 10 sample products.
+     * A StockManager populated with 10 sample products.
      */
-    public StockDemo(StockList stock)
+    public StockDemo()
+    //(StockList stock)
     {
-        this.stock = stock;
+        //this.stock = stock;
+        this.stock = new StockList();
         
         // Add at least 10 products, they must be unique to you
         // Make sure the ids are sequential numbers. A product ID cannot start
@@ -34,7 +35,9 @@ public class StockDemo
         stock.add(new Product(107, "HomeAssistant Basic"));
         stock.add(new Product(108, "HomeAssistant Supreme"));
         stock.add(new Product(109, "HomeAssistant Ultimate"));
-        stock.add(new Product(110, "Economy Batteries"));
+        stock.add(new Product(110, "Batteries, Economy"));
+        
+        runDemo();
     }
     
     /**
@@ -51,17 +54,27 @@ public class StockDemo
         stock.print();
 
         buyProducts();
+        // Call Established (stock)
         stock.print();        
 
         sellProducts();
+        // Call Established
         stock.print();        
     }
     
+    /**
+     * Allows for user to define the quantity of products to be bought.
+     */
     private void buyProducts()
     {
+        stock.buyProduct(110, 1000);
     }
 
+    /**
+     * Allows for user to define the quantity of products sold.
+     */
     private void sellProducts()
     {
+        stock.sellProduct(110, 800);
     }    
 }
