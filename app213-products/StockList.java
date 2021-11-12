@@ -49,7 +49,7 @@ public class StockList
         Product product = findProduct(productID);
         if(product != null) 
         {
-            if(product.getQuantity() < 1000)
+            if(product.getQuantity() <= 1000)
             {
                 product.increaseQuantity(amount);
                 
@@ -119,7 +119,6 @@ public class StockList
         }
         else
         {
-                //Alternate error message, more precise.
                 System.out.println( "Cannot sell " + amount + " of "
                                     + product.getName() + " as only " + 
                                     product.getQuantity() + " units of stock are available.");

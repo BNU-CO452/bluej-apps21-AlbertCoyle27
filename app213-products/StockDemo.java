@@ -66,15 +66,10 @@ public class StockDemo
     }
     
     /**
-     * Allows for user to define the quantity of products to be bought.
+     * Generates a random value for the purchase of products, used for a stock
+     * management demonstration.
      */
     private void buyProducts()
-    // Adding functionality for randon value testing, will be testing the
-    // method "nextInt", which picks out a value between an upper and lower 
-    // bound. Ensure a number exceeding the established bounds is created to
-    // test the efficacy of the system error detection and resolution.
-    // The iterative "for" loop must be used to execute the function for each 
-    // product.
     {
         for(int i = 101; i <= 110; i++)
         {
@@ -83,13 +78,14 @@ public class StockDemo
     }
 
     /**
-     * Allows for user to define the quantity of products sold.
+     * Generates a random value for the sale of products, used for a stock
+     * management demonstration.
      */
     private void sellProducts()
-    {
+        {
         for(int i = 101; i <= 110; i++)
         {
-            stock.buyProduct(i, random.nextInt(1001));
+            stock.sellProduct(i, random.nextInt(1001));
         }
     }
     }   
