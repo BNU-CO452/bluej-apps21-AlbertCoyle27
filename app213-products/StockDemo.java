@@ -1,4 +1,4 @@
-
+import java.util.Random;
 /**
  * Demonstrate the StockManager and Product classes.
  * The demonstration becomes properly functional as
@@ -12,6 +12,8 @@ public class StockDemo
 {
     // The stock manager.
     private StockList stock;
+    
+    private Random random;
 
     /**
      * A StockManager populated with 10 sample products.
@@ -21,6 +23,7 @@ public class StockDemo
     {
         //this.stock = stock;
         this.stock = new StockList();
+        this.random = new Random();
         
         // Add at least 10 products, they must be unique to you
         // Make sure the ids are sequential numbers. A product ID cannot start
@@ -66,17 +69,22 @@ public class StockDemo
      * Allows for user to define the quantity of products to be bought.
      */
     private void buyProducts()
+    // Adding functionality for randon value testing, will be testing the
+    // method "nextInt", which picks out a value between an upper and lower 
+    // bound. Ensure a number exceeding the established bounds is created to
+    // test the efficacy of the system error detection and resolution.
     {
-        stock.buyProduct(101, 700);
-        stock.buyProduct(102, 600);
-        stock.buyProduct(103, 425);
-        stock.buyProduct(104, 600);
-        stock.buyProduct(105, 550);
-        stock.buyProduct(106, 150);
-        stock.buyProduct(107, 550);
-        stock.buyProduct(108, 225);
-        stock.buyProduct(109, 100);
-        stock.buyProduct(110, 800);
+        for(int i = 101; i <= 10; i++)
+        stock.buyProduct(101, random.nextInt(1000));
+        stock.buyProduct(102, random.nextInt(1000));
+        stock.buyProduct(103, random.nextInt(1000));
+        stock.buyProduct(104, random.nextInt(1000));
+        stock.buyProduct(105, random.nextInt(1005));
+        stock.buyProduct(106, random.nextInt(1000));
+        stock.buyProduct(107, random.nextInt(1000));
+        stock.buyProduct(108, random.nextInt(1000));
+        stock.buyProduct(109, random.nextInt(1000));
+        stock.buyProduct(110, random.nextInt(1000));
     }
 
     /**
