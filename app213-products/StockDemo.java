@@ -6,7 +6,7 @@ import java.util.Random;
  * 
  * @author David J. Barnes and Michael Kölling.
  * @modified by Albert Coyle
- * @version 05-11-21
+ * @version 12-11-21
  */
 public class StockDemo
 {
@@ -27,7 +27,7 @@ public class StockDemo
         
         // Add at least 10 products, they must be unique to you
         // Make sure the ids are sequential numbers. A product ID cannot start
-        // with a 0. Not an illegal value, but it will not display.
+        // with a 0. Not an illegal value, but it will fail to display.
         
         stock.add(new Product(101, "Fitness Watch Standard"));
         stock.add(new Product(102, "Fitness Watch Plus"));
@@ -73,18 +73,13 @@ public class StockDemo
     // method "nextInt", which picks out a value between an upper and lower 
     // bound. Ensure a number exceeding the established bounds is created to
     // test the efficacy of the system error detection and resolution.
+    // The iterative "for" loop must be used to execute the function for each 
+    // product.
     {
-        for(int i = 101; i <= 10; i++)
-        stock.buyProduct(101, random.nextInt(1000));
-        stock.buyProduct(102, random.nextInt(1000));
-        stock.buyProduct(103, random.nextInt(1000));
-        stock.buyProduct(104, random.nextInt(1000));
-        stock.buyProduct(105, random.nextInt(1005));
-        stock.buyProduct(106, random.nextInt(1000));
-        stock.buyProduct(107, random.nextInt(1000));
-        stock.buyProduct(108, random.nextInt(1000));
-        stock.buyProduct(109, random.nextInt(1000));
-        stock.buyProduct(110, random.nextInt(1000));
+        for(int i = 101; i <= 110; i++)
+        {
+            stock.buyProduct(i, random.nextInt(1001));
+        }
     }
 
     /**
@@ -92,15 +87,9 @@ public class StockDemo
      */
     private void sellProducts()
     {
-        stock.sellProduct(101, 400);
-        stock.sellProduct(102, 500);
-        stock.sellProduct(103, 275);
-        stock.sellProduct(104, 150);
-        stock.sellProduct(105, 325);
-        stock.sellProduct(106, 140);
-        stock.sellProduct(107, 200);
-        stock.sellProduct(108, 110);
-        stock.sellProduct(109, 80);
-        stock.sellProduct(110, 775);
-    }    
-}
+        for(int i = 101; i <= 110; i++)
+        {
+            stock.buyProduct(i, random.nextInt(1001));
+        }
+    }
+    }   
