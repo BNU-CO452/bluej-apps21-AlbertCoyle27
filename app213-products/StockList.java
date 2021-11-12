@@ -121,9 +121,9 @@ public class StockList
         else
         {
                 //Alternate error message, more precise.
-                System.out.println( "Cannot sell " + amount + "of "
-                                    + product.getName() + "as only " + 
-                                    product.getQuantity() + "units of stock are available.");
+                System.out.println( "Cannot sell " + amount + " of "
+                                    + product.getName() + " as only " + 
+                                    product.getQuantity() + " units of stock are available.");
         }
         }
         else
