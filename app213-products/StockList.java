@@ -48,10 +48,25 @@ public class StockList
     // Can this be differentiated in name from the single value method?
     {
         Product product = findProduct(productID);
-        if(product != null)
-            product.increaseQuantity(amount);
+        if(product != null) 
+        {
+            if(product.getQuantity() < 1000)
+            {
+                product.increaseQuantity(amount);
+                
+                System.out.println(" Bought " + amount + " of " +
+                product.getName());
+                // Personalise message, e.g. (Message + product.getName());
+            }
+            else
+            {
+                System.out.println( product.getName() + " cannot be purchased. Selected quantity would exceed current storage limitations.");
+            }
+        }
         else
-            System.out.println(" Product not found.");
+        {
+            System.out.println(" Product matching this criteria not found.");
+        }
     }
     
     /**
@@ -89,22 +104,27 @@ public class StockList
     public void sellProduct(int productID, int amount)
     {
         Product product = findProduct(productID);
-        
-        if(product != null) 
+
+    if(product != null) 
+    {
+        if(product.getQuantity() > 0 && product.getQuantity() > amount)
         {
-            if(product.getQuantity() > 0)
-            {
                 product.decreaseQuantity(amount);
                 
-                System.out.println(" Sale of " + product.getName() +
-                " successful.");
-                // Personalise message, e.g. (Message + product.getName());
-            }
-            else
-            {
+                System.out.println(" Sold " + amount + " of " + product.getName());
+        }   
+        else if(product.getQuantity() == 0)
+        {
                 System.out.println( product.getName() +
                 " is currently out of stock.");
-            }
+        }
+        else
+        {
+                //Alternate error message, more precise.
+                System.out.println( "Cannot sell " + amount + "of "
+                                    + product.getName() + "as only " + 
+                                    product.getQuantity() + "units of stock are available.");
+        }
         }
         else
         {

@@ -67,7 +67,16 @@ public class StockDemo
      */
     private void buyProducts()
     {
-        stock.buyProduct(110, 1000);
+        stock.buyProduct(101, 700);
+        stock.buyProduct(102, 600);
+        stock.buyProduct(103, 425);
+        stock.buyProduct(104, 600);
+        stock.buyProduct(105, 550);
+        stock.buyProduct(106, 150);
+        stock.buyProduct(107, 550);
+        stock.buyProduct(108, 225);
+        stock.buyProduct(109, 100);
+        stock.buyProduct(110, 800);
     }
 
     /**
@@ -75,6 +84,15 @@ public class StockDemo
      */
     private void sellProducts()
     {
-        stock.sellProduct(110, 800);
+        stock.sellProduct(101, 400);
+        stock.sellProduct(102, 500);
+        stock.sellProduct(103, 275);
+        stock.sellProduct(104, 150);
+        stock.sellProduct(105, 325);
+        stock.sellProduct(106, 140);
+        stock.sellProduct(107, 200);
+        stock.sellProduct(108, 110);
+        stock.sellProduct(109, 80);
+        stock.sellProduct(110, 775);
     }    
 }
