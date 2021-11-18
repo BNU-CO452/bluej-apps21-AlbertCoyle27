@@ -84,6 +84,23 @@ public class StockList
         return null;
     }
     
+    /**
+     * A method intended to search for a product based on its name.
+     * Should be able to draw a result with only the initial part of the name
+     * given.
+     */
+    public Product findProduct (String name)
+    {
+        for(Product product : stock)
+        {
+            if(product.getName() == name)
+            {
+                return product;
+            }
+        }
+        return null;
+    }
+    
         /**
      * Sells one of the given product.
      * Show the before and after status of the product.

@@ -1,0 +1,66 @@
+stockdemoElectronics.runDemo();
+
+ Bertraeme's Stock List
+ ====================
+
+ ID 101: Fitness Watch Standard stock level: 61
+ ID 102: Fitness Watch Plus stock level: 120
+ ID 103: Fitness Watch Premium stock level: 426
+ ID 104: SmartPhone Simple stock level: 90
+ ID 105: SmartPhone Alpha stock level: 137
+ ID 106: SmartPhone Omega stock level: 610
+ ID 107: HomeAssistant Basic stock level: 424
+ ID 108: HomeAssistant Supreme stock level: 446
+ ID 109: HomeAssistant Ultimate stock level: 288
+ ID 110: Batteries, Economy stock level: 568
+
+ Bought 570 of Fitness Watch Standard
+ Bought 182 of Fitness Watch Plus
+ Bought 237 of Fitness Watch Premium
+ Bought 330 of SmartPhone Simple
+ Bought 363 of SmartPhone Alpha
+ Bought 306 of SmartPhone Omega
+ Bought 416 of HomeAssistant Basic
+ Bought 457 of HomeAssistant Supreme
+ Bought 99 of HomeAssistant Ultimate
+ Bought 167 of Batteries, Economy
+
+ Bertraeme's Stock List
+ ====================
+
+ ID 101: Fitness Watch Standard stock level: 631
+ ID 102: Fitness Watch Plus stock level: 302
+ ID 103: Fitness Watch Premium stock level: 663
+ ID 104: SmartPhone Simple stock level: 420
+ ID 105: SmartPhone Alpha stock level: 500
+ ID 106: SmartPhone Omega stock level: 916
+ ID 107: HomeAssistant Basic stock level: 840
+ ID 108: HomeAssistant Supreme stock level: 903
+ ID 109: HomeAssistant Ultimate stock level: 387
+ ID 110: Batteries, Economy stock level: 735
+
+Cannot sell 631 of Fitness Watch Standard as only 631 units of stock are available.
+Cannot sell 393 of Fitness Watch Plus as only 302 units of stock are available.
+ Sold 54 of Fitness Watch Premium
+Cannot sell 875 of SmartPhone Simple as only 420 units of stock are available.
+ Sold 372 of SmartPhone Alpha
+ Sold 767 of SmartPhone Omega
+ Sold 378 of HomeAssistant Basic
+ Sold 424 of HomeAssistant Supreme
+Cannot sell 717 of HomeAssistant Ultimate as only 387 units of stock are available.
+ Sold 490 of Batteries, Economy
+
+ Bertraeme's Stock List
+ ====================
+
+ ID 101: Fitness Watch Standard stock level: 631
+ ID 102: Fitness Watch Plus stock level: 302
+ ID 103: Fitness Watch Premium stock level: 609
+ ID 104: SmartPhone Simple stock level: 420
+ ID 105: SmartPhone Alpha stock level: 128
+ ID 106: SmartPhone Omega stock level: 149
+ ID 107: HomeAssistant Basic stock level: 462
+ ID 108: HomeAssistant Supreme stock level: 479
+ ID 109: HomeAssistant Ultimate stock level: 387
+ ID 110: Batteries, Economy stock level: 245
+
