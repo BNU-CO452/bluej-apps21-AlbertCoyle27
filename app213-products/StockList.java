@@ -194,7 +194,7 @@ public class StockList
     public void printHeading()
     {
         System.out.println();
-        System.out.println(" Bertraeme's Stock List");
+        System.out.println(" Albert's Stock List");
         System.out.println(" ====================");
         System.out.println();
     }
