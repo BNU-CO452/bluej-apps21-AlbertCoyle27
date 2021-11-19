@@ -1,9 +1,10 @@
 
 /**
- * Write a description of class Program here.
+ * Program launches a text-based visual interface with which the user
+ * may directly communicate, rather than working through object methods.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Albert Coyle
+ * @version 0.1 (19/11/2021)
  */
 public class Program
 {
