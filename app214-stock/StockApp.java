@@ -43,6 +43,21 @@ public class StockApp
         }
     }
     
+    private void addProduct()
+    {
+        System.out.println("Adding a new product");
+        System.out.println(); // Blank Line
+        
+        int id = reader.getInt("Enter a product ID number.");
+        // Returns an integer
+        String name = reader.getString("Enter a product name.");
+        // Should return a product name
+        
+        //stock.get(Product);
+        //stock.print();
+        // Stock (stock) is as yet undeclared. Importing the App03 Classes will remedy this.
+    }
+    
     private boolean executeChoice(String choice)
     {
         if(choice.equals("quit"))
