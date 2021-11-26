@@ -28,6 +28,15 @@ public class StockList
         stock.add(item);
     }
     
+        /**
+     * Removes a product to the list.
+     * @param item The product item to be removed from the StockList.
+     */
+    public void remove(Product item)
+    {
+        stock.remove(item);
+    }
+    
     /**
      * A method to buy a single quantity of the product
      */
