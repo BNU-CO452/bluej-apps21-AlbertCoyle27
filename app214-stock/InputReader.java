@@ -33,20 +33,20 @@ public class InputReader
         
         while(!isValid)
         {
-            System.out.print(prompt);         // print prompt
+            System.out.print(prompt);         
             inputLine = reader.nextLine();
             
             if(!inputLine.isEmpty())
                 isValid = true;
             else 
-                System.out.println("\nYour input is blank!\n");
+                System.out.println("\nBlank input detected.\n");
         }
 
         return inputLine;
     }
     
     /**
-     * Read a the next int from standard imput (the text terminal),
+     * Reads the succeeding Int from standard input (the terminal console),
      * and return it as an interger.
      * 
      * @return Integer typed by user.
@@ -58,7 +58,7 @@ public class InputReader
         
         while(!isValid)
         {
-            System.out.println(prompt);         // print prompt
+            System.out.println(prompt);
             number = reader.nextInt();
             
             if(number > 0)
@@ -66,7 +66,7 @@ public class InputReader
                 isValid = true;
             }
             else 
-                System.out.println("Your value is less than zero!");
+                System.out.println("Value Less Than Zero.");
         }
 
         return number;
