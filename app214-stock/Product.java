@@ -3,7 +3,7 @@
  * 
  * @author David J. Barnes and Michael Kölling.
  * @modified by Albert Coyle
- * @version 12-11-2021
+ * @version 26-11-2021
  */
 public class Product
 {
