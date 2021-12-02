@@ -46,43 +46,6 @@ public class StockApp
         }
     }
     
-    private void addProduct()
-    {
-        System.out.println("Adding a new product");
-        System.out.println(); // Blank Line
-        
-        int id = reader.getInt("Enter a product ID number.");
-        // Returns an integer
-        String name = reader.getString("Enter a product name.");
-        // Should return a product name
-        
-        //stock.get(Product);
-        //stock.print();
-        // Stock (stock) is as yet undeclared. Importing the App03 Classes will remedy this.
-    }
-    
-        private void removeProduct(Product stock)
-    {
-        //System.out.println("Removing a product");
-        //System.out.println();
-        
-        //int id = reader.getInt("Enter product ID number.");
-        // Returns an integer
-        //String name = reader.getString("Enter product name.");
-        // Should return a product name
-        
-        //stock.remove(Product);
-        //stock.print();
-    }
-    
-        private void printProduct()
-    {
-        //System.out.println("Printing all products");
-        //System.out.println();
-        //stock.print();
-        //System.out.println();
-    }
-    
     private boolean executeChoice(String choice)
     
     {
@@ -99,7 +62,6 @@ public class StockApp
             // Adds a brand new product to the stocklist
             System.out.println("Product " + product.getID() 
             + ","  + product.getName() +  " has been added.");
-            // Ensure there is no = accidentally included.
         }
         else if (choice.equals("remove"))
         {
@@ -110,11 +72,6 @@ public class StockApp
             // Adds a brand new product to the stocklist
             System.out.println("Product " + product.getID() 
             + ","  + product.getName() +  " has been removed");
-            // Ensure there is no = accidentally included.
-            // product.remove(Product);
-            // Product product = Product();
-            // Converting the above lines of code to remove a product
-            // Videos
         }
         else if(choice.equals("print"))
         {
