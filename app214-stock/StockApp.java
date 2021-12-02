@@ -13,7 +13,7 @@ public class StockApp
     
     private StockList stock;
     
-    private StockDemo demo;
+    //private StockDemo demo;
     //Declaration used to call the functions of the StockDemo class
     
     /**
@@ -25,7 +25,7 @@ public class StockApp
         
         stock = new StockList();
         
-        //StockDemo demo = new StockDemo();
+        StockDemo demo = new StockDemo(stock);
     }
 
     /**
