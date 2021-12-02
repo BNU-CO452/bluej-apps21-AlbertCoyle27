@@ -1,0 +1,13 @@
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+      by Albert Coyle
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > Quit
+Program Operation Terminated. You may now close the window.

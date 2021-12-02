@@ -12,6 +12,7 @@ public class Program
     
     public static void main(String[] args)
     {
+        System.out.println("Application Launch Successful. Please enter a displayed prompt.");
         app = new StockApp();
         app.run();
     }

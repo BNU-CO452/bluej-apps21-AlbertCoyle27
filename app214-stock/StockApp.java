@@ -13,7 +13,7 @@ public class StockApp
     
     private StockList stock;
     
-    private StockDemo demo;
+    //private StockDemo demo;
     //Declaration used to call the functions of the StockDemo class
     
     /**
@@ -24,7 +24,8 @@ public class StockApp
         reader = new InputReader();
         
         stock = new StockList();
-        StockDemo demo = new StockDemo();
+        
+        //StockDemo demo = new StockDemo();
     }
 
     /**
@@ -51,6 +52,7 @@ public class StockApp
     {
         if(choice.equals("quit"))
         {
+            System.out.println("Program Operation Terminated. You may now close the window.");
             return true;
         }
         else if (choice.equals("add"))
