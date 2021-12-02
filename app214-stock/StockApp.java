@@ -25,7 +25,7 @@ public class StockApp
         
         stock = new StockList();
         
-        StockDemo demo = new StockDemo(stock);
+        StockDemo demo = new StockDemo();
     }
 
     /**
