@@ -6,7 +6,7 @@ import java.util.Scanner;
  * 
  * @author Michael Kölling and David J. Barnes
  * @modified by Albert Coyle 19/11/2021
- * @version 0.11 (19/11/2021)
+ * @version 0.13 (30/11/2021)
  */
 public class InputReader
 {
@@ -28,6 +28,8 @@ public class InputReader
      */
     public String getString(String prompt)
     {
+        reader = new Scanner(System.in);
+        // InputReader code reinstated to allow for input reads.
         String inputLine = null;
         boolean isValid = false;
         

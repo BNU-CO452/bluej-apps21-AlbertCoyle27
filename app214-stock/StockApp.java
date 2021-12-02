@@ -5,13 +5,16 @@
  * print and remove stock products
  *
  * @author Albert Coyle
- * @version 0.12
+ * @version 0.13 (30/12/2021)
  */
 public class StockApp
 {
     private InputReader reader;
     
     private StockList stock;
+    
+    private StockDemo demo;
+    //Declaration used to call the functions of the StockDemo class
     
     /**
      * Constructor for objects of class StockApp
@@ -21,7 +24,7 @@ public class StockApp
         reader = new InputReader();
         
         stock = new StockList();
-        //StockDemo demo = new StockDemo(stock);
+        StockDemo demo = new StockDemo();
     }
 
     /**
@@ -81,6 +84,7 @@ public class StockApp
     }
     
     private boolean executeChoice(String choice)
+    
     {
         if(choice.equals("quit"))
         {
@@ -88,21 +92,29 @@ public class StockApp
         }
         else if (choice.equals("add"))
         {
-            reader.getInt("Enter product ID");
+            int id = reader.getInt("Enter product ID");
             String name = reader.getString("Enter product name");
             Product product = new Product(113,"LED Lightbulb, Low Energy");
             stock.add(product);
             // Adds a brand new product to the stocklist
             System.out.println("Product " + product.getID() 
-            + " ,"  + product.getName() +  "has been added");
+            + ","  + product.getName() +  " has been added.");
             // Ensure there is no = accidentally included.
         }
         else if (choice.equals("remove"))
         {
-            reader.getInt("Enter product ID");
+            int id = reader.getInt("Enter product ID");
             String name = reader.getString("Enter product name");
-            //Product product = new Product(113,"LED Lightbulb, Low Energy");
-            // Converting the above line of code to remove a product
+            Product product = new Product(113,"LED Lightbulb, Low Energy");
+            stock.remove(product);
+            // Adds a brand new product to the stocklist
+            System.out.println("Product " + product.getID() 
+            + ","  + product.getName() +  " has been removed");
+            // Ensure there is no = accidentally included.
+            // product.remove(Product);
+            // Product product = Product();
+            // Converting the above lines of code to remove a product
+            // Videos
         }
         else if(choice.equals("print"))
         {
