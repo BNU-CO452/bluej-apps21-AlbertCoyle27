@@ -57,14 +57,7 @@ public class StockApp
         }
         else if (choice.equals("add"))
         {
-            int id = reader.getInt("Enter product ID");
-            String name = reader.getString("Enter product name");
-            Product product = new Product(113,"LED Lightbulb, Low Energy");
-            stock.add(product);
-            // Adds a brand new product to the stocklist
-            System.out.println("Product " + product.getID() 
-            + ","  + product.getName() +  " has been added.");
-            stock.print();
+            addProduct();
         }
         else if (choice.equals("remove"))
         {
@@ -77,16 +70,16 @@ public class StockApp
         }
         else if(choice.equals("print"))
         {
-            stock.print();
+            printProduct();
         }
         else if (choice.equals("buy"))
         {
-            
+            buyProduct();
         }
         return false;
     }
    
-           private void printProduct()
+    private void printProduct()
     {
         System.out.println("Printing all products");
         System.out.println();
@@ -94,6 +87,22 @@ public class StockApp
         System.out.println();
     }
     
+    private void addProduct()
+    {
+        int id = reader.getInt("Enter product ID");
+        String name = reader.getString("Enter product name");
+        Product product = new Product(113,"LED Lightbulb, Low Energy");
+        stock.add(product);
+        System.out.println("Product " + product.getID() 
+            + ","  + product.getName() +  " has been added.");
+            stock.print();
+    }
+    
+        private void buyProduct(int productID, int amount, String product)
+    {
+
+    }
+        
     /**
      * Print out a menu of operation choices
      */
