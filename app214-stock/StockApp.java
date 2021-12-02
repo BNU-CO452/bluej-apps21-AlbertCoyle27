@@ -98,7 +98,7 @@ public class StockApp
             stock.print();
     }
     
-        private void buyProduct(int productID, int amount, String product)
+        private void buyProduct()
     {
 
     }
