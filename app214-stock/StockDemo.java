@@ -18,7 +18,7 @@ public class StockDemo
     /**
      * A StockManager populated with 10 sample products.
      */
-    public StockDemo()
+    public StockDemo(StockList stock)
     //(StockList stock)
     {
         //this.stock = stock;

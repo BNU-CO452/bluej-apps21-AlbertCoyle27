@@ -1,23 +1,40 @@
 Program.main({ });
 Application Launch Successful. Please enter a displayed prompt.
-********************************
-  App21-04: Stock Application 
-      by Albert Coyle
-********************************
 
-    Add:        Add a new product
-    Remove:     Remove an old product
-    Print:      Print all products
-    Quit:       Quit the program
-    Buy:        Buy stock of a product
-    Sell:       Sell stock of a product
-    Search:     Search for a product
+ Albert's Stock List
+ ====================
 
-Please enter your choice > Add
-Enter product ID
-113
-Enter product nameLED Lightbulb, Low Energy
-Product 113,LED Lightbulb, Low Energy has been added.
+
+ Product matching this criteria not found.
+ Product matching this criteria not found.
+ Product matching this criteria not found.
+ Product matching this criteria not found.
+ Product matching this criteria not found.
+ Product matching this criteria not found.
+ Product matching this criteria not found.
+ Product matching this criteria not found.
+ Product matching this criteria not found.
+ Product matching this criteria not found.
+
+ Albert's Stock List
+ ====================
+
+
+ Product matching this criteria not found.
+ Product matching this criteria not found.
+ Product matching this criteria not found.
+ Product matching this criteria not found.
+ Product matching this criteria not found.
+ Product matching this criteria not found.
+ Product matching this criteria not found.
+ Product matching this criteria not found.
+ Product matching this criteria not found.
+ Product matching this criteria not found.
+
+ Albert's Stock List
+ ====================
+
+
 ********************************
   App21-04: Stock Application 
       by Albert Coyle
@@ -36,7 +53,16 @@ Please enter your choice > print
  Albert's Stock List
  ====================
 
- ID 113: LED Lightbulb, Low Energy stock level: 0
+ ID 101: Fitness Watch Standard stock level: 0
+ ID 102: Fitness Watch Plus stock level: 0
+ ID 103: Fitness Watch Premium stock level: 0
+ ID 104: SmartPhone Simple stock level: 0
+ ID 105: SmartPhone Alpha stock level: 0
+ ID 106: SmartPhone Omega stock level: 0
+ ID 107: HomeAssistant Basic stock level: 0
+ ID 108: HomeAssistant Supreme stock level: 0
+ ID 109: HomeAssistant Ultimate stock level: 0
+ ID 110: Batteries, Economy stock level: 0
 
 ********************************
   App21-04: Stock Application 

@@ -25,7 +25,7 @@ public class StockApp
         
         stock = new StockList();
         
-        StockDemo demo = new StockDemo();
+        StockDemo demo = new StockDemo(stock);
     }
 
     /**
@@ -64,6 +64,7 @@ public class StockApp
             // Adds a brand new product to the stocklist
             System.out.println("Product " + product.getID() 
             + ","  + product.getName() +  " has been added.");
+            stock.print();
         }
         else if (choice.equals("remove"))
         {
@@ -77,7 +78,6 @@ public class StockApp
         else if(choice.equals("print"))
         {
             stock.print();
-            printHeading();
         }
         else if (choice.equals("buy"))
         {
@@ -86,6 +86,14 @@ public class StockApp
         return false;
     }
    
+           private void printProduct()
+    {
+        System.out.println("Printing all products");
+        System.out.println();
+        stock.print();
+        System.out.println();
+    }
+    
     /**
      * Print out a menu of operation choices
      */
