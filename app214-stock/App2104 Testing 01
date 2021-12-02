@@ -1,0 +1,54 @@
+Program.main({ });
+Application Launch Successful. Please enter a displayed prompt.
+********************************
+  App21-04: Stock Application 
+      by Albert Coyle
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy stock of a product
+    Sell:       Sell stock of a product
+    Search:     Search for a product
+
+Please enter your choice > Add
+Enter product ID
+113
+Enter product nameLED Lightbulb, Low Energy
+Product 113,LED Lightbulb, Low Energy has been added.
+********************************
+  App21-04: Stock Application 
+      by Albert Coyle
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy stock of a product
+    Sell:       Sell stock of a product
+    Search:     Search for a product
+
+Please enter your choice > print
+
+ Albert's Stock List
+ ====================
+
+ ID 113: LED Lightbulb, Low Energy stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Albert Coyle
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy stock of a product
+    Sell:       Sell stock of a product
+    Search:     Search for a product
+
+Please enter your choice > 

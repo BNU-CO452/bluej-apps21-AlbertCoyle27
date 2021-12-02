@@ -13,7 +13,7 @@ public class StockApp
     
     private StockList stock;
     
-    //private StockDemo demo;
+    private StockDemo demo;
     //Declaration used to call the functions of the StockDemo class
     
     /**
@@ -71,15 +71,18 @@ public class StockApp
             String name = reader.getString("Enter product name");
             Product product = new Product(113,"LED Lightbulb, Low Energy");
             stock.remove(product);
-            // Adds a brand new product to the stocklist
             System.out.println("Product " + product.getID() 
             + ","  + product.getName() +  " has been removed");
         }
         else if(choice.equals("print"))
         {
             stock.print();
+            printHeading();
         }
-        
+        else if (choice.equals("buy"))
+        {
+            
+        }
         return false;
     }
    
@@ -93,6 +96,9 @@ public class StockApp
         System.out.println("    Remove:     Remove an old product");
         System.out.println("    Print:      Print all products");
         System.out.println("    Quit:       Quit the program");
+        System.out.println("    Buy:        Buy stock of a product");
+        System.out.println("    Sell:       Sell stock of a product");
+        System.out.println("    Search:     Search for a product");
         System.out.println();        
     }
     
