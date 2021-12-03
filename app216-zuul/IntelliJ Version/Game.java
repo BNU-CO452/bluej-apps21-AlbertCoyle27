@@ -11,7 +11,8 @@
  *  locations, creates the CommandReader and starts the game.  
  * 
  * @author  Michael Kölling and David J. Barnes
- * @version 2016.02.29
+ * @modified Albert Coyle
+ * @version 03/12/2021
  * 
  * Modified and extended by Student Name
  */
