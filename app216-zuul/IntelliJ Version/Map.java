@@ -16,7 +16,8 @@ public class Map
     // Need to add a list of exits
     
     private Location outside, theater, pub, lab, office;
-
+    // My locations will be more along the lines of north corridor, east corridor, north cell, east cell,
+    // northeast cell (one of the four which must be unlocked by the player in order to win)
     private Location currentLocation;
 
     /**
