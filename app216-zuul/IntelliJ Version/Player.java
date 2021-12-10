@@ -13,6 +13,9 @@ public class Player
   //a form of negative feedback. The player is punished for committing impudent actions.
       public player(String name)
   //The player is composed of these three variables
+      private ArrayList<Item> items;
+  // Either use a single item or an array list of items
+  // Ensure that you can support a single item before progressing to a list.
       {
           this.name = name
           credit = 0
@@ -27,6 +30,14 @@ public class Player
       public class Item
       {
           private ItemType itemType;
+
+          private String name;
+
+          private int value;
+      }
+      public Item(ItemType, type, String name)
+      {
+
       }
       public enum ItemType
           //
